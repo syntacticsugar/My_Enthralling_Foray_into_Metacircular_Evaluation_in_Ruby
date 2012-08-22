@@ -3,23 +3,40 @@
 # (lambda (x,y) (+ x y))
 
 module LispFuckingRocks
-  def cons(x,y)
-    lambda { |perform_magic| perform_magic[x,y] }
+  def cons( head, tail )
+    lambda { |perform_magic| perform_magic[ head,tail ] }
   end
 
-  def car(x,y)
-    perform_magic[ lambda { |x,y| x } ]
+  def car( head, tail )
+    perform_magic[ lambda { |head,tail| head } ]
   end
 
-  def cdr(x,y)
-    perform[ lambda { |x,y| y } ]
+  def cdr( head, tail )
+    perform_magic[ lambda { |head,tail| tail } ]
   end
 end
 
+# # begin poetry!
+# # (shakespeare could've only coveted from afar)
+#
+#
+#
+# (def cons
+#     (lambda (x y)
+#         (lambda (proc) (proc x y))))
+#
+# (def car
+#     (lambda (do_something)
+#         (do_something (lambda (x y) x))))
 
 # (def cdr
 #     (lambda (do_something)
-#         (do_something (lambda (x,y) y))))
+#         (do_something (lambda (x y) y))))
+#
+#
+#
+# # end poetry... :(
+
 
 
 
