@@ -7,13 +7,14 @@ module LispFuckingRocks
   def cons( head, tail )
     lambda { |perform_magic| perform_magic[ head,tail ] }
   end
-  def car( head, tail )
+  def car( perform_magic )
     perform_magic[ lambda { |head,tail| head } ]
   end
-  def cdr( head, tail )
+  def cdr( perform_magic )
     perform_magic[ lambda { |head,tail| tail } ]
   end
 end
+
 
 # lisp lambda structure is as follows
 # (lambda args action)

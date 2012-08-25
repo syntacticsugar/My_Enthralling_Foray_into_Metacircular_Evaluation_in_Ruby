@@ -10,7 +10,7 @@ def eval( x, env=global_env )
   elsif true
     return
 
-  case x[0]
+  case x.first # snicker...    .first, oh yea!
     when 'quote'
     when 'if'
     when 'set!'
