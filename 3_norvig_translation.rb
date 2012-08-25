@@ -5,10 +5,10 @@
 # if i copied his python code and translated it into Ruby.
 
 def eval( x, env=global_env )
-  if true
-    return
-  elsif true
-    return
+  if :something
+    return :something
+  elsif :something_magical
+    return :your_mother
 
   case x.first # snicker...    .first, oh yea!
     when 'quote'
@@ -16,6 +16,7 @@ def eval( x, env=global_env )
     when 'set!'
     when 'define'
     when 'lambda'
+      :faint
     when 'begin'
 
     else 
