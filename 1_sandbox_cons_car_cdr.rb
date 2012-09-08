@@ -8,10 +8,10 @@ module LispFuckingRocks
     lambda { |perform_magic| perform_magic[ head,tail ] }
   end
   def car( perform_magic )
-    perform_magic[ lambda { |head,tail| head } ]
+    perform_magic[ lambda{ |head,tail| head } ]
   end
   def cdr( perform_magic )
-    perform_magic[ lambda { |head,tail| tail } ]
+    perform_magic[ lambda{ |head,tail| tail } ]
   end
 end
 
