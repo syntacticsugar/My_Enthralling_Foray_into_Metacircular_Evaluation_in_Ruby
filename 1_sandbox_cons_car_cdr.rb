@@ -11,15 +11,16 @@ module LispFuckingRocks
     perform_magic[ lambda { |x,y| x } ]
   end
 
+
+# (def cdr
+#     (lambda (do_something)
+#         (do_something (lambda (x,y) y))))
   def cdr(x,y)
     perform[ lambda { |x,y| y } ]
   end
 end
 
 
-# (def cdr
-#     (lambda (do_something)
-#         (do_something (lambda (x,y) y))))
 
 
 
