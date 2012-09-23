@@ -10,7 +10,6 @@ module LispFuckingRocks
   def car( perform_magic )
     perform_magic[ lambda{ |head,tail| head } ]
   end
-<<<<<<< HEAD
 
 
 # (def cdr
@@ -18,16 +17,12 @@ module LispFuckingRocks
 #         (do_something (lambda (x,y) y))))
   def cdr(x,y)
     perform[ lambda { |x,y| y } ]
-=======
   def cdr( perform_magic )
     perform_magic[ lambda{ |head,tail| tail } ]
->>>>>>> a048ff7e7f7c661189724b760f49658721ca4a4c
   end
 end
 
 
-<<<<<<< HEAD
-=======
 # lisp lambda structure is as follows
 # (lambda args action)
 # (lambda (x,y) (+ x y))
@@ -58,7 +53,6 @@ end
 #
 # # end poetry... :(
 
->>>>>>> a048ff7e7f7c661189724b760f49658721ca4a4c
 
 
 
